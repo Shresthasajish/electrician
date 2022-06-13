@@ -16,7 +16,7 @@ const Gallery = () => {
   const [isClicked, setIsClicked] = useState("All")
   // const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
   const handleClick = (clicked) => setIsClicked( clicked );
-  console.log(isClicked)
+  
   return (
     <div className='mt-14'>
         <div className='flex flex-col items-center justify-center'>

@@ -12,11 +12,15 @@ import Option from '../components/Option'
 import Faq from '../components/Faq'
 import Tagline from '../components/Tagline'
 import Footer from '../components/Footer'
+import Unav from '../components/Unav'
+// import Button from '../components/Button'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col gap-8'>
+    <div className='flex flex-col'>
+    <Unav/>
      <Navbar/>
+     {/* <Button/> */}
      <Homepage/>
      <Aboutus/>
      <Photo/>
@@ -29,6 +33,7 @@ const Home: NextPage = () => {
      <Faq/>
      <Tagline/>
      <Footer/>
+    
     </div>
   )
 }

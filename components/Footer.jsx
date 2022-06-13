@@ -43,7 +43,7 @@ const Footer = () => {
 
             <div className='flex flex-col justify-center items-start absolute -top-12 rounded-md ml-14 '>
                 <div className='flex justify-center items-center bg-orange-500 pb-4 pt-5 px-14 rounded-md '>
-                <p className='text-2xl font-semibold text-white py-3 px-14'>Subscribe To Our Newsletter</p>
+                <p className='lg:text-2xl lg:font-semibold text-white lg:py-3 lg:px-14 md:text-xl md:font-normal md:py-1 md:px-5 sm:text-xl sm:font-normal sm:py-0 sm:px-0'>Subscribe To Our Newsletter</p>
                 <input type="text" className={style} placeholder='Your e-mail address'/>
                 
                 <button className='bg-slate-800 p-2 rounded-md hover:bg-white hover:text-orange-500 border-2 text-white border-orange-500 font-semibold'>Get Service</button>

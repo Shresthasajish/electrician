@@ -3,11 +3,11 @@ import {BrowserRouter} from 'react-router-dom'
 
 
 const Navbar = () => {
-    const style = 'cursor-pointer hover:text-orange-500'
+    const style = 'cursor-pointer hover:text-orange-500 lg:font-semibold '
   return (
-    <div className='flex justify-around p-4 items-center w-full bg-white sticky top-0 z-30 shadow-md'>
+    <div className='flex justify-around p-4 px-[10%] items-center w-full bg-white sticky top-0 z-30 shadow-md '>
         {/* <BrowserRouter> */}
-            <div className='cursor-pointer text-3xl font-bold -top-2'>Electrician</div>
+            <div className='cursor-pointer lg:text-3xl lg:font-bold -top-2 sm:text-xl sm:font-normal'>Electrician</div>
             <div className={style}>Home</div>
             <div className={style}>About Us</div>
             <div className={style}>Services</div>

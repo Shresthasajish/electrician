@@ -2,7 +2,7 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <div className='flex gap-5 justify-around px-14 pt-14 mx-14'>
+    <div className='flex flex-wrap gap-5 justify-around px-14 pt-14 mx-14'>
         <div className='flex flex-col'>
             <div>
                 <p className='text-orange-500 font-semibold'>Latest News</p>

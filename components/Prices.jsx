@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Prices = () => {
+     
   return (
     <div >
         <div className='relative'>
@@ -22,6 +23,7 @@ const Prices = () => {
         </div>
     </div>
   )
+  
 }
 
 export default Prices
