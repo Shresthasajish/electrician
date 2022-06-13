@@ -3,16 +3,20 @@ import data from '../data/carousel'
 
 const Gallery = () => {
 
-  const initialState = {
-    All: false,
-    Residences: false,
-    Industrial: false,
-    Offices: false,
-    Retail:false,
-  };
+  // const initialState = {
+  //   All: false,
+  //   Residences: false,
+  //   Industrial: false,
+  //   Offices: false,
+  //   Retail:false,
+  // };
 
-  const [isClicked, setIsClicked] = useState(initialState)
-  const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
+  let list =["All", "Residences", "Industrial", "Offices", "Retail"]
+
+  const [isClicked, setIsClicked] = useState("All")
+  // const handleClick = (clicked) => setIsClicked({ ...initialState, [clicked]: true });
+  const handleClick = (clicked) => setIsClicked( clicked );
+  console.log(isClicked)
   return (
     <div className='mt-14'>
         <div className='flex flex-col items-center justify-center'>
@@ -25,7 +29,7 @@ const Gallery = () => {
                 <button className='font-semibold cursor-pointer' onClick={()=>handleClick('Offices')}>Offices</button>
                 <button className='font-semibold cursor-pointer' onClick={()=>handleClick('Retail')}>Retail_objects</button>
             </div>
-            {isClicked.All &&
+            {(isClicked == "All") && 
              (
              <div className='flex flex-col flex-wrap items-start'>
             <div className='flex gap-8 px-14 items-center justify-center mt-5'>
@@ -41,9 +45,10 @@ const Gallery = () => {
             <img src="electrician2.jpg" alt="" width="250px"/> 
             </div> 
             </div>) }
-            {isClicked.Residences &&
+
+            {(isClicked=="Residences") &&
              (
-             <div className='flex flex-col flex-wrap'>
+             <div className='flex flex-col flex-wrap items-start'>
             <div className='flex gap-8 px-14 items-center justify-center mt-5'>
             <img src="electrician2.jpg" alt="" width="250px"/> 
             <img src="electrician2.jpg" alt="" width="250px"/> 
@@ -58,9 +63,9 @@ const Gallery = () => {
             </div> 
             </div>) }
 
-            {isClicked.Industrial &&
+            {(isClicked == "Industrial") &&
              (
-             <div className='flex flex-col flex-wrap'>
+             <div className='flex flex-col flex-wrap items-start'>
             <div className='flex gap-8 px-14 items-center justify-center mt-5'>
             <img src="electrician2.jpg" alt="" width="250px"/> 
             <img src="electrician2.jpg" alt="" width="250px"/> 
@@ -75,9 +80,9 @@ const Gallery = () => {
             </div> 
             </div>) }
 
-            {isClicked.Offices &&
+            {(isClicked=="Offices") &&
              (
-             <div className='flex flex-col flex-wrap'>
+             <div className='flex flex-col flex-wrap items-start'>
             <div className='flex gap-8 px-14 items-center justify-center mt-5'>
             <img src="electrician2.jpg" alt="" width="250px"/> 
             <img src="electrician2.jpg" alt="" width="250px"/> 
@@ -92,9 +97,9 @@ const Gallery = () => {
             </div> 
             </div>) }
 
-            {isClicked.Retail &&
+            {(isClicked=="Retail") &&
              (
-             <div className='flex flex-col flex-wrap'>
+             <div className='flex flex-col flex-wrap items-start'>
             <div className='flex gap-8 px-14 items-center justify-center mt-5'>
             <img src="electrician2.jpg" alt="" width="250px"/> 
             <img src="electrician2.jpg" alt="" width="250px"/> 
